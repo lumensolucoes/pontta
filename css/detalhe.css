@@ -1,0 +1,73 @@
+body{
+	margin-top: 18px;
+}
+.btn-back{
+	font-size: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #47accf;
+	font-weight: normal;
+	margin-top: 30px;
+}
+
+.title-task{
+	background-color: #47accf;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 15px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+	.task-detail{
+		border-bottom: 1px solid #47accf;
+	}
+		.task-detail > .col-xs-6{
+			padding-left: 2px;
+			padding-right: 2px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+			.task-detail > .col-xs-6.task-left{
+				border-right: 1px solid #47accf;
+			}
+			.task-detail > .col-xs-6 > i, .task-detail > .col-xs-12 > i{
+				float: left;
+				color: #47accf;
+				font-size: 25px;
+				margin-left: 25px;
+				margin-right: 15px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+				.task-detail > .col-xs-12 > i{
+					font-size: 35px;
+					margin-left: 10px;
+				}
+			.task-detail > .col-xs-6 > p, .task-detail > .col-xs-12 > p{
+				margin: 0px;
+				padding: 0px;
+				color: #47accf;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				font-size: 16px;
+			}
+				.task-detail > .col-xs-12 > p{
+					overflow: auto;
+					padding-right: 10px;
+				}
+				.task-detail > .task-right > i{
+					margin-left: 15px;
+				}
+.task-button{}
+	.task-button > a{
+		font-size: 30px;
+		margin-left: 0px;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+	}

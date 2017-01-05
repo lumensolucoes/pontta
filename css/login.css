@@ -1,0 +1,25 @@
+.logo{
+	max-width: 50%;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.form-control{
+}
+	.form-control[type="text"], .form-control[type="password"]{
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		padding: 30px;
+		font-size: 20px;
+	}
+		.form-control[type="text"]:focus, .form-control[type="password"]:focus{
+			-webkit-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0);
+			-moz-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0);
+			box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0);
+		}
+	.form-control[type="submit"]{
+		font-size: 22px;
+		font-weight: bold;
+		padding-bottom: 40px;
+		padding-top: 12px;
+	}

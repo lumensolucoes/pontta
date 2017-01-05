@@ -1,0 +1,57 @@
+<!doctype html>
+<html ng-app="app" lang="pt-br" >
+<head>
+	<base href="/pontta/">
+	<title>Pontta Tecnologia</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-animate.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/pontta.js"></script>
+	<script src="js/routes.js"></script>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/pontta.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap-override.css">
+</head>
+<body>
+
+<sidebar ng-class="nav ? 'open' : ''" ng-if="showNav">
+	<ul>
+		<li>
+			<a href="#" class="bars" ng-click="navbar()">
+				<i class="fa fa-bars" ng-class="nav ? 'fa-rotate-90' : ''"></i>
+			</a>
+		</li>
+		<li class="text-center" ng-show="nav">
+			<div class="row">
+				<div class="col-xs-12">
+					<i class="fa fa-user-o img-user"></i>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 user-data">
+					<p class="user">Pontta Tecnologia</p>
+					<p class="office">Administrador</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<button class="btn btn-danger btn-logout" ng-click="logout()"><i class="fa fa-sign-out"></i> SAIR</button>
+				</div>
+			</div>
+		</li>
+	</ul>
+</sidebar>
+
+<div ng-view ></div>
+ 
+<script src="controller/AppCtrl.js"></script>
+<script src="controller/DashboardCtrl.js"></script>
+<script src="controller/AtividadeCtrl.js"></script>
+</body>
+</html>
