@@ -18,7 +18,6 @@ app.controller('AppCtrl', function($scope, $http, $rootScope, $location, $window
 		$location.path("/");
 		$rootScope.showNav = false;
 		$rootScope.nav = false;
-		
 	}
 	
 });

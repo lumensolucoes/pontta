@@ -5,7 +5,7 @@
 <a class="btn-back" ng-click="back()"><i class="fa fa-chevron-left"></i></a>
 
 <div class="row">
-	<div class="col-xs-12 title-task text-center">Montar cozinha</div>
+	<div class="col-xs-12 title-task text-center">{{atividades[indexAtvidade].tarefa}}</div>
 </div>
 <div class="row task-detail">
 	<div class="col-xs-6 task-left">
@@ -14,13 +14,13 @@
 	</div>
 	<div class="col-xs-6 task-right">
 		<i class="fa fa-lightbulb-o"></i>
-		<p>INICIADO</p>
+		<p>{{atividades[indexAtvidade].situacao}}</p>
 	</div>
 </div>
 <div class="row task-detail">
 	<div class="col-xs-6 task-left">
 		<i class="fa fa-calendar"></i>
-		<p>05/01/2017</p>
+		<p>{{atividades[indexAtvidade].data | date: 'd/M/yyyy'}}</p>
 	</div>
 	<div class="col-xs-6 task-right">
 		<i class="fa fa-phone"></i>
@@ -30,7 +30,7 @@
 <div class="row task-detail">
 	<div class="col-xs-12">
 		<i class="fa fa-globe"></i>
-		<p class="text-left">Av 85, nº 185 - Setor Oeste - Goiânia - GO - CEP: 74.000-000</p>
+		<p class="text-left">{{atividades[indexAtvidade].endereco}}</p>
 	</div>
 </div>
 <div class="row task-button">
